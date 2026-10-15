@@ -1,0 +1,35 @@
+{
+  "tools": {
+    "read_file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path"],
+      "properties": {
+        "path": {"type": "string"},
+        "offset": {"type": "integer"},
+        "limit": {"type": "integer"}
+      }
+    },
+    "shell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command"],
+      "properties": {
+        "command": {"type": "string"},
+        "cwd": {"type": "string"},
+        "timeout_ms": {"type": "integer"}
+      }
+    },
+    "send_email": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["to", "subject", "body"],
+      "properties": {
+        "to": {"type": "string"},
+        "subject": {"type": "string"},
+        "body": {"type": "string"},
+        "cc": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

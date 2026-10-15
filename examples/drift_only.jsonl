@@ -1,0 +1,4 @@
+{"tool": "search", "args": {"query": "agents"}}
+{"tool": "search", "args": {"query": "schema"}}
+{"tool": "search", "args": {"query": "schema", "mode": "deep", "budget": 3}}
+{"tool": "search", "args": {"q": "schema", "limit": "five"}}

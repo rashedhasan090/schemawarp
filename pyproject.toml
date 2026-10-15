@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schemawarp"
+version = "0.1.0"
+description = "Flag agent tool-call argument shape violations and mid-run schema drift against JSON Schema catalogs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Md Rashedul Hasan" }]
+keywords = ["agents", "llm", "tool-calls", "json-schema", "schema-drift", "offline", "cli"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.scripts]
+schemawarp = "schemawarp.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["schemawarp*"]
